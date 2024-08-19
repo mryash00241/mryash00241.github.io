@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>ObsidianOS</title>
+</head>
+<body>
+
+  <div style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.125); color: #fff; justify-content: space-between; gap: 32px;">
+    <p style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+      ☀️ ObsidianOS ☁️ 
+    </p>
+    <p style="margin-left: 16px; background-color: rgba(256, 256, 256, 0.25); padding: 4px 12px; border-radius: 16px;">
+      🌎 Life is Boring Without Adventure ⛰️
+    </p>
+    <p id="timeElement" style="margin-right: 16px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+      Fetching Data From https://time.is
+    </p>
+  </div>
+
+  <div id="mydiv" style="border: solid; display: none; flex-direction: column; border-radius: 16px; position: absolute; top: calc(50% - 90px); left: calc(50% - 180px); backdrop-filter: blur(4px); background-color: rgba(0, 0, 0, 0.125);">
+    <span id="closeButton" class="closebutton"></span>
+    <div id="mydivheader" style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px; margin: 0px; color: #fff; font-weight: 500">
+      Welcome
+    </div>
+    <div style="background-color: #fff; margin: 6px; border-radius: 12px; width: 360px; padding: 16px;">
+      <img src="me.png" style="width: 128px; height: 128px; border-radius: 64px; object-fit: cover;" />
+      <h1 style="margin: 4px;">ObsidianOS</h1>
+      <p style="margin: 0px;">
+        <dfn>ObsidianOS</dfn> is a web-based <abbr title="Operating System">OS</abbr> to answer the <br />
+        unanswerable question of <code>"who is Yash?"</code>
+      </p>
+    </div>
+  </div>
+
+  <div id="desktopApps" style="padding-top: 64px;">
+    <div id="openButton" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content; cursor: pointer;">
+      <img src="open-icon.svg" style="width: 64px; height: 64px; border-radius: 16px;">
+      <p style="margin: 0px; color: #fff;">About</p>
+    </div>
+    <div id="previewButton" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content; cursor: pointer;">
+      <img src="preview-icon.png" style="width: 64px; height: 64px; border-radius: 16px;">
+      <p style="margin: 0px; color: #fff;">Preview</p>
+    </div>
+    <div id="previewBlock">
+      <span id="previewCloseButton" class="closebutton"></span>
+      <div id="previewBlockHeader" style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px; margin: 0px; color: #fff; font-weight: 500">
+        Website Preview
+      </div>
+      <div id="previewFrameContainer">
+        <iframe id="previewFrame"></iframe>
+      </div>
+    </div>
+    <div id="instagramButton" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content; cursor: pointer;">
+      <img src="instagram-icon.png" style="width: 64px; height: 64px; border-radius: 16px;">
+      <p style="margin: 0px; color: #fff;">Instagram</p>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
